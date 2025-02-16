@@ -1,7 +1,7 @@
 ---
 name: Issue template
 about: Please create an issue to work on
-title: ''
+title: "[태그] 이슈 요약"
 labels: ''
 assignees: ''
 
