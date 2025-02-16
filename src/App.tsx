@@ -1,7 +1,11 @@
-import "./App.css";
+import { Outlet } from "react-router";
 
 function App() {
-  return <div className="flex justify-center">app</div>;
+  return (
+    <div className="flex flex-col">
+      <Outlet />
+    </div>
+  );
 }
 
 export default App;
