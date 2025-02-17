@@ -2,7 +2,7 @@
 
 const Recruiting = () => {
   return (
-    <div>Recruiting</div>
+    <main>Recruiting</main>
   )
 }
 
