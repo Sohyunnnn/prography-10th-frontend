@@ -3,20 +3,37 @@
 
 @theme {
   --color-primary: #fa2354;
+  --color-secondary: #ff682a;
+  --color-tertiary: #feb902;
 }
 
 @layer components {
+  .display6 {
+    @apply text-[70px] leading-[84px] font-bold tracking-[-1.8%];
+  }
+  .display5 {
+    @apply text-[60px] leading-[74px] font-bold tracking-[-1.8%];
+  }
   .display4 {
     @apply text-[50px] leading-[58px] font-bold tracking-[-1.8%];
   }
   .display3 {
     @apply text-[40px] leading-[40px] font-bold tracking-[-1.8%];
   }
+  .display3-medium {
+    @apply text-[40px] leading-[40px] font-medium tracking-[-1.8%];
+  }
   .display2 {
     @apply text-[36px] leading-[38px] font-bold tracking-[-1.8%];
   }
+  .display2-medium {
+    @apply text-[36px] leading-[38px] font-medium tracking-[-1.8%];
+  }
   .display1 {
     @apply text-[32px] leading-[42px] font-bold tracking-[-1.86%];
+  }
+  .display1-medium {
+    @apply text-[32px] leading-[42px] font-medium tracking-[-1.86%];
   }
   .title3 {
     @apply text-[30px] leading-[34px] font-medium tracking-[-1.82%];
@@ -57,5 +74,4 @@
   .caption1 {
     @apply text-[12px] leading-[14px] font-medium tracking-[-0.6%];
   }
-
 }
