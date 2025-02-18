@@ -3,4 +3,75 @@
 
 @theme {
   --color-primary: #fa2354;
+  --color-secondary: #ff682a;
+  --color-tertiary: #feb902;
+}
+
+@layer components {
+  .display6 {
+    @apply text-[70px] leading-[86px] font-bold tracking-[-1.8%];
+  }
+  .display5 {
+    @apply text-[60px] leading-[74px] font-bold tracking-[-1.8%];
+  }
+  .display4 {
+    @apply text-[50px] leading-[58px] font-bold tracking-[-1.8%];
+  }
+  .display3 {
+    @apply text-[40px] leading-[40px] font-bold tracking-[-1.8%];
+  }
+  .display3-medium {
+    @apply text-[40px] leading-[40px] font-medium tracking-[-1.8%];
+  }
+  .display2 {
+    @apply text-[36px] leading-[38px] font-bold tracking-[-1.8%];
+  }
+  .display2-medium {
+    @apply text-[36px] leading-[38px] font-medium tracking-[-1.8%];
+  }
+  .display1 {
+    @apply text-[32px] leading-[42px] font-bold tracking-[-1.86%];
+  }
+  .display1-medium {
+    @apply text-[32px] leading-[42px] font-medium tracking-[-1.86%];
+  }
+  .title3 {
+    @apply text-[30px] leading-[34px] font-medium tracking-[-1.82%];
+  }
+  .title2 {
+    @apply text-[28px] leading-[32px] font-medium tracking-[-1.34%];
+  }
+  .title1 {
+    @apply text-[20px] leading-[32px] font-medium tracking-[-1.56%];
+  }
+  .body-bold3 {
+    @apply text-[32px] leading-[40px] font-bold tracking-[-0.8%];
+  }
+  .body-bold2 {
+    @apply text-[24px] leading-[32px] font-bold tracking-[-0.8%];
+  }
+  .body-bold1 {
+    @apply text-[16px] leading-[19px] font-bold tracking-[-0.8%];
+  }
+  .caption-bold1 {
+    @apply text-[16px] leading-[16px] font-medium tracking-[-0.8%];
+  }
+  .body3 {
+    @apply text-[24px] leading-[32px] font-medium tracking-[-0.8%];
+  }
+  .body2 {
+    @apply text-[20px] leading-[28px] font-medium tracking-[-0.8%];
+  }
+  .body1 {
+    @apply text-[18px] leading-[26px] font-medium tracking-[-0.8%];
+  }
+  .caption3 {
+    @apply text-[16px] leading-[28px] font-medium tracking-[-0.6%];
+  }
+  .caption2 {
+    @apply text-[14px] leading-[24px] font-medium tracking-[-0.6%];
+  }
+  .caption1 {
+    @apply text-[12px] leading-[14px] font-medium tracking-[-0.6%];
+  }
 }
