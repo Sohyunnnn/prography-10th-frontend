@@ -9,7 +9,7 @@
 
 @layer components {
   .display6 {
-    @apply text-[70px] leading-[84px] font-bold tracking-[-1.8%];
+    @apply text-[70px] leading-[86px] font-bold tracking-[-1.8%];
   }
   .display5 {
     @apply text-[60px] leading-[74px] font-bold tracking-[-1.8%];

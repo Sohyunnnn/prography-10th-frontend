@@ -25,13 +25,13 @@ const Home = () => {
       <div className="flex h-full min-h-screen flex-col items-center justify-center">
         <div className="flex flex-col gap-24">
           <p className="display3-medium">
-            ✔️ 새로운 가치를 만들어내는데 가슴이 두근거리신다면,
+            ☑️ 새로운 가치를 만들어내는데 가슴이 두근거리신다면,
           </p>
           <p className="display3-medium">
-            ✔️ 열정적인 IT인들과 함께 사이드 프로젝트를 하고 싶으시다면,
+            ☑️ 열정적인 IT인들과 함께 사이드 프로젝트를 하고 싶으시다면,
           </p>
           <p className="display3-medium">
-            ✔️ 탁월한 동료들과 짜릿한 성취감을 느껴보고 싶으시다면,
+            ☑️ 탁월한 동료들과 짜릿한 성취감을 느껴보고 싶으시다면,
           </p>
         </div>
       </div>
