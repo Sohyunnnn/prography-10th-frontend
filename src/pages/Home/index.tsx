@@ -44,9 +44,30 @@ const Home = () => {
           📌 자세한 정보는 아래 페이지에 담아뒀으니, 지원 전 꼭 확인해주세요 👇🏻
         </p>
         <div className="flex flex-col items-center gap-5">
-          <a className="body1">🗒️ 모집 안내 살펴보기</a>
-          <a className="body1">🏡 공식 홈페이지</a>
-          <a className="body1">🔗 인스타그램</a>
+          <a
+            className="body1 hover:underline"
+            href={import.meta.env.VITE_GUIDE_PAGE}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🗒️ 모집 안내 살펴보기
+          </a>
+          <a
+            className="body1 hover:underline"
+            href={import.meta.env.VITE_OFFICIAL_SITE}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🏡 공식 홈페이지
+          </a>
+          <a
+            className="body1 hover:underline"
+            href={import.meta.env.VITE_INSTAGRAM}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🔗 인스타그램
+          </a>
         </div>
       </div>
     </main>
