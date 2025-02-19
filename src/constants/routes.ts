@@ -1,6 +1,6 @@
 const routes = {
   main: "/",
-  recruiting: "recruiting",
+  recruiting: "/recruiting",
 } as const;
 
 export default routes;
