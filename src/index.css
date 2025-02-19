@@ -5,6 +5,7 @@
   --color-primary: #fa2354;
   --color-secondary: #ff682a;
   --color-tertiary: #feb902;
+  --color-gray-10: #151b23;
 }
 
 @layer components {
