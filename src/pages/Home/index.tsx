@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </Section>
         <Section>
-          <h2 className="display6 text-primary mt-50">"프로답게, 재미있게"</h2>
+          <h2 className="display6 text-primary mt-30">"프로답게, 재미있게"</h2>
           <p className="display1-medium mt-10">
             재미있는 작당을 함께 만들어갈 10기에 합류하세요.
           </p>
