@@ -1,15 +1,12 @@
-import { useState } from "react";
+import { useFormContext } from "react-hook-form";
 import FormHeader from "../FormHeader";
 import LabeledRadioButton from "../LabeledRadioButton";
 import RequiredLabel from "../RequiredLabel";
 import { generation } from "@constants/generation";
 
 const Step1 = () => {
-  const [privacyConsent, setPrivacyConsent] = useState<string>("");
-
-  const handlePrivacyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPrivacyConsent(e.target.value);
-  };
+  const { register, watch } = useFormContext();
+  const privacyConsent = watch("privacyConsent");
 
   const privacyInfo = [
     {
@@ -42,22 +39,19 @@ const Step1 = () => {
 
       <div className="flex flex-col gap-4">
         <RequiredLabel>개인정보 수집 동의 여부를 체크해주세요.</RequiredLabel>
+
         <LabeledRadioButton
           id="privacyConsent-yes"
-          name="privacyConsent"
           value="yes"
           label="개인정보 수집 여부에 동의합니다."
-          checked={privacyConsent === "yes"}
-          onChange={handlePrivacyChange}
+          {...register("privacyConsent")}
         />
 
         <LabeledRadioButton
           id="privacyConsent-no"
-          name="privacyConsent"
           value="no"
           label="개인정보 수집에 동의하지 않습니다."
-          checked={privacyConsent === "no"}
-          onChange={handlePrivacyChange}
+          {...register("privacyConsent")}
         />
       </div>
     </>

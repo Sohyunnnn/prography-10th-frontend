@@ -5,8 +5,8 @@ interface LabeledRadioButtonProps {
   name: string;
   value: string;
   label: ReactNode;
-  checked: boolean;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  checked?: boolean;
 }
 
 const LabeledRadioButton = ({
@@ -14,11 +14,14 @@ const LabeledRadioButton = ({
   name,
   value,
   label,
-  checked,
   onChange,
+  checked,
 }: LabeledRadioButtonProps) => {
   return (
-    <div className="flex items-center gap-2 rounded-md border border-gray-300 p-3">
+    <label
+      htmlFor={id}
+      className="caption2 flex items-center gap-2 rounded-md border border-gray-300 p-3"
+    >
       <input
         id={id}
         type="radio"
@@ -28,10 +31,8 @@ const LabeledRadioButton = ({
         checked={checked}
         onChange={onChange}
       />
-      <label htmlFor={id} className="caption2">
-        {label}
-      </label>
-    </div>
+      {label}
+    </label>
   );
 };
 
