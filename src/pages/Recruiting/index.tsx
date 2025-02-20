@@ -12,9 +12,23 @@ const steps = [1, 2, 3];
 const Recruiting = () => {
   const [step, setStep] = useState(1);
   const methods = useForm();
+  const privacyConsent = methods.watch("privacyConsent");
+  const { watch } = methods;
+  const isStep2Valid = watch("name") && watch("email") && watch("phone");
+  const isStep3Valid = !!watch("field");
 
   const handleNext = () => {
-    if (step < steps.length) setStep((prev) => prev + 1);
+    if (step === 1 && privacyConsent !== "yes") {
+      alert("개인정보 수집 및 이용 동의에 체크해주세요.");
+      return;
+    }
+
+    if (step === 2 && !isStep2Valid) {
+      alert("이름, 이메일, 휴대폰 번호를 모두 입력해주세요.");
+      return;
+    }
+
+    setStep((prev) => prev + 1);
   };
 
   const handlePrev = () => {
@@ -22,8 +36,13 @@ const Recruiting = () => {
   };
 
   const onSubmit = (data: any) => {
-    console.log("폼 제출 완료", data);
-    setStep(4);
+    if (isStep3Valid) {
+      console.log("폼 제출 완료", data);
+      setStep(4);
+    } else {
+      alert("지원 분야를 선택해주세요.");
+      return;
+    }
   };
 
   return (
