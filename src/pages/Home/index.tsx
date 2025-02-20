@@ -1,3 +1,4 @@
+import { generation } from "@constants/generation";
 import Badge from "./components/Badge";
 import FloatingButton from "./components/FloatingButton";
 import LinkItem from "./components/LinkItem";
@@ -30,7 +31,7 @@ const Home = () => {
         </Section>
         <Section>
           <p className="display4">
-            드디어 Prography 10기 모집이 시작되었습니다.
+            드디어 Prography {generation.tenth}기 모집이 시작되었습니다.
           </p>
           <div className="my-15 flex w-full flex-wrap justify-center gap-4">
             {badgeList.map(({ type, label }) => (
@@ -51,7 +52,7 @@ const Home = () => {
         <Section>
           <h2 className="display6 text-primary mt-30">"프로답게, 재미있게"</h2>
           <p className="display1-medium mt-10">
-            재미있는 작당을 함께 만들어갈 10기에 합류하세요.
+            재미있는 작당을 함께 만들어갈 {generation.tenth}기에 합류하세요.
           </p>
           <p className="title1 mt-30 mb-8">
             📌 자세한 정보는 아래 페이지에 담아뒀으니, 지원 전 꼭 확인해주세요

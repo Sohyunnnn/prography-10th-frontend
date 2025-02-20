@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormHeader from "../FormHeader";
 import LabeledRadioButton from "../LabeledRadioButton";
 import RequiredLabel from "../RequiredLabel";
+import { generation } from "@constants/generation";
 
 const Step1 = () => {
   const [privacyConsent, setPrivacyConsent] = useState<string>("");
@@ -13,7 +14,7 @@ const Step1 = () => {
   const privacyInfo = [
     {
       title: "수집 목적",
-      description: "Prography 10기 리쿠르팅 과정 및 결과 안내",
+      description: `Prography ${generation.tenth}기 리쿠르팅 과정 및 결과 안내`,
     },
     {
       title: "수집 항목",
@@ -29,7 +30,7 @@ const Step1 = () => {
     <>
       <FormHeader
         title="개인정보 수집동의"
-        description="프로그라피 10기 지원을 위한 개인정보 수집에 대한 동의가 필요합니다."
+        description={`프로그라피 ${generation.tenth}기 지원을 위한 개인정보 수집에 대한 동의가 필요합니다.`}
       />
       <ul className="caption2 mt-2 mb-7 list-disc pl-5">
         {privacyInfo.map((item, index) => (

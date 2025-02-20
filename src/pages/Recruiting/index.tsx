@@ -4,6 +4,7 @@ import Step2 from "./components/Step2";
 import Step3 from "./components/Step3";
 import Success from "./components/Success";
 import StepButton from "./components/StepButton";
+import { generation } from "@constants/generation";
 
 const steps = [1, 2, 3];
 
@@ -22,7 +23,7 @@ const Recruiting = () => {
     <main className="flex items-center">
       <div className="bg-gray-10 flex h-173 w-150 flex-col justify-between rounded-lg px-10 pt-6 pb-10">
         <div>
-          <p className="title2-1 p-3 text-center">Prography 10기 지원서</p>
+          <p className="title2-1 p-3 text-center">Prography {generation.tenth}기 지원서</p>
           <div className="flex items-center justify-center gap-2">
             {steps.map((currentStep) => (
               <React.Fragment key={currentStep}>
