@@ -38,7 +38,7 @@ const Recruiting = () => {
   const onSubmit = (data: any) => {
     if (isStep3Valid) {
       // Todo : 폼 제출 api 연결
-
+      console.log(data);
       setStep(4);
     } else {
       alert("지원 분야를 선택해주세요.");
