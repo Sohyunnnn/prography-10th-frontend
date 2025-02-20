@@ -7,7 +7,7 @@ interface RequiredLabelProps {
 
 const RequiredLabel = ({ children, htmlFor }: RequiredLabelProps) => {
   return (
-    <label htmlFor={htmlFor} className="body1 font-medium text-white">
+    <label htmlFor={htmlFor} className="caption3 font-medium text-white">
       {children}
       <span className="text-red-500"> *</span>
     </label>

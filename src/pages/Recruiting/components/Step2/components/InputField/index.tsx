@@ -28,7 +28,7 @@ const InputField = ({
       name={name}
       value={value}
       onChange={onChange}
-      className="focus:border-primary w-full rounded-md border border-gray-300 p-3 focus:outline-none"
+      className="focus:border-primary caption2 w-full rounded-md border border-gray-300 p-3 focus:outline-none"
       placeholder={placeholder}
     />
   </div>

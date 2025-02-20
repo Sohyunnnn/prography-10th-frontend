@@ -8,7 +8,7 @@ import StepButton from "./components/StepButton";
 const steps = [1, 2, 3];
 
 const Recruiting = () => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(3);
 
   const handleNext = () => {
     if (step < steps.length + 1) setStep((prev) => prev + 1);
@@ -20,14 +20,14 @@ const Recruiting = () => {
 
   return (
     <main className="flex items-center">
-      <div className="bg-gray-10 flex h-170 w-150 flex-col justify-between rounded-lg px-10 pt-6 pb-10">
+      <div className="bg-gray-10 flex h-173 w-150 flex-col justify-between rounded-lg px-10 pt-6 pb-10">
         <div>
-          <p className="title3 p-4 text-center">Prography 10기 지원서</p>
+          <p className="title2-1 p-3 text-center">Prography 10기 지원서</p>
           <div className="flex items-center justify-center gap-2">
             {steps.map((currentStep) => (
               <React.Fragment key={currentStep}>
                 <div
-                  className={`flex h-7 w-7 items-center justify-center rounded-full ${
+                  className={`flex h-6 w-6 items-center justify-center rounded-full ${
                     step >= currentStep ? "bg-primary" : "bg-gray-500"
                   }`}
                 >
