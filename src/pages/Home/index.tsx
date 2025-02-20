@@ -34,8 +34,8 @@ const Home = () => {
             드디어 Prography {generation.tenth}기 모집이 시작되었습니다.
           </p>
           <div className="my-15 flex w-full flex-wrap justify-center gap-4">
-            {badgeList.map(({ type, label }) => (
-              <Badge key={type} type={type} label={label} />
+            {badgeList.map(({ type, label }, index) => (
+              <Badge key={`${type}-${index}`} type={type} label={label} />
             ))}
           </div>
           <p className="display2">총 6개의 파트를 모집합니다.</p>
