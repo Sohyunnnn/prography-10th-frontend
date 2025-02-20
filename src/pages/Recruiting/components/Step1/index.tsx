@@ -5,8 +5,7 @@ import RequiredLabel from "../RequiredLabel";
 import { generation } from "@constants/generation";
 
 const Step1 = () => {
-  const { register, watch } = useFormContext();
-  const privacyConsent = watch("privacyConsent");
+  const { register } = useFormContext();
 
   const privacyInfo = [
     {
