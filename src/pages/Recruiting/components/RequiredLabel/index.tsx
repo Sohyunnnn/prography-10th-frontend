@@ -2,14 +2,15 @@ import { ReactNode } from "react";
 
 interface RequiredLabelProps {
   children: ReactNode;
+  htmlFor?: string;
 }
 
-const RequiredLabel = ({ children }: RequiredLabelProps) => {
+const RequiredLabel = ({ children, htmlFor }: RequiredLabelProps) => {
   return (
-    <p className="body2 font-medium text-white">
+    <label htmlFor={htmlFor} className="body1 font-medium text-white">
       {children}
       <span className="text-red-500"> *</span>
-    </p>
+    </label>
   );
 };
 
