@@ -6,7 +6,7 @@ interface RequiredLabelProps {
 
 const RequiredLabel = ({ children }: RequiredLabelProps) => {
   return (
-    <p className="font-medium text-black">
+    <p className="body2 font-medium text-white">
       {children}
       <span className="text-red-500"> *</span>
     </p>
