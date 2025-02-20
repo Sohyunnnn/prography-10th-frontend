@@ -12,7 +12,7 @@ const FloatingButton = () => {
   return (
     <button
       type="button"
-      className="fixed right-5 bottom-6 flex cursor-pointer items-center rounded-4xl bg-white py-4 pr-9 pl-4 text-black"
+      className="fixed right-5 bottom-6 flex items-center rounded-4xl bg-white py-4 pr-9 pl-4 text-black"
       onClick={handleClick}
     >
       <span className="mr-7">지원하기</span>

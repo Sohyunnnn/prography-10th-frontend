@@ -11,3 +11,11 @@ main {
   margin-top: 80px;
   min-height: calc(100vh - 80px);
 }
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
