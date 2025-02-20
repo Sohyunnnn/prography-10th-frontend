@@ -53,7 +53,7 @@ const Recruiting = () => {
             onClick={handlePrev}
             disabled={step === 1}
             text="이전"
-            additionalStyles={
+            className={
               step === 1
                 ? "bg-gray-300 text-gray-500"
                 : "bg-gray-500 text-white"
@@ -63,7 +63,7 @@ const Recruiting = () => {
             onClick={handleNext}
             disabled={step === steps.length + 1}
             text={step === steps.length ? "완료" : "다음"}
-            additionalStyles={
+            className={
               step === steps.length + 1
                 ? "bg-gray-300 text-gray-500"
                 : "bg-primary text-white"
