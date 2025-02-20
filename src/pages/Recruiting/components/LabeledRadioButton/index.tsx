@@ -2,20 +2,15 @@ import { ReactNode } from "react";
 
 interface LabeledRadioButtonProps {
   id: string;
-  name: string;
   value: string;
   label: ReactNode;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  checked?: boolean;
 }
 
 const LabeledRadioButton = ({
   id,
-  name,
   value,
   label,
-  onChange,
-  checked,
+  ...rest
 }: LabeledRadioButtonProps) => {
   return (
     <label
@@ -25,11 +20,9 @@ const LabeledRadioButton = ({
       <input
         id={id}
         type="radio"
-        name={name}
         className="border p-2"
         value={value}
-        checked={checked}
-        onChange={onChange}
+        {...rest}
       />
       {label}
     </label>

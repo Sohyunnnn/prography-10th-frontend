@@ -11,7 +11,12 @@ const steps = [1, 2, 3];
 
 const Recruiting = () => {
   const [step, setStep] = useState(1);
-  const methods = useForm();
+  const methods = useForm({
+    defaultValues: {
+      privacyConsent: "",
+      field: "",
+    },
+  });
 
   const handleNext = () => {
     if (step < steps.length) setStep((prev) => prev + 1);

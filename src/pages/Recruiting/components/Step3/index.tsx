@@ -4,7 +4,7 @@ import RequiredLabel from "../RequiredLabel";
 import LabeledRadioButton from "../LabeledRadioButton";
 
 const Step3 = () => {
-  const { register, watch } = useFormContext();
+  const { register, watch, setValue } = useFormContext();
 
   const fields = [
     { value: "frontend", label: "프론트엔드" },
@@ -16,6 +16,10 @@ const Step3 = () => {
   ];
 
   const selectedField = watch("field");
+
+  const handleRadioChange = (value: string) => {
+    setValue("field", value);
+  };
 
   return (
     <>
@@ -32,8 +36,7 @@ const Step3 = () => {
               id={`field-${item.value}`}
               value={item.value}
               label={item.label}
-              checked={selectedField === item.value}
-              {...register("field", { required: true })}
+              {...register("field")}
             />
           ))}
         </div>
