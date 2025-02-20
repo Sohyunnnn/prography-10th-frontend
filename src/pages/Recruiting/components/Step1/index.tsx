@@ -21,7 +21,7 @@ const Step1 = () => {
     <>
       <FormHeader
         title="개인정보 수집동의"
-        description="프로그라피 10기 지원을 위한 개인정보 수집에 대한 동의가 필요합니다"
+        description="프로그라피 10기 지원을 위한 개인정보 수집에 대한 동의가 필요합니다."
       />
       <ul className="caption2 mt-2 mb-7 list-disc pl-5">
         {privacyInfo.map((item, index) => (
