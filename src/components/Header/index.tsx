@@ -1,4 +1,4 @@
-import { Logo } from "@assets/index";
+import { Logo } from "@assets/images";
 import routes from "@constants/routes";
 import { useNavigate } from "react-router";
 
