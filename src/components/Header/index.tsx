@@ -9,7 +9,7 @@ const Header = () => {
     navigate(routes.main);
   };
   return (
-    <header className="fixed flex w-full justify-between bg-black/70 px-5 py-4 backdrop-blur-lg">
+    <header className="fixed z-1 flex w-full justify-between bg-black/70 px-5 py-4 backdrop-blur-lg">
       <img
         src={Logo}
         className="h-12 w-[138px] cursor-pointer"
