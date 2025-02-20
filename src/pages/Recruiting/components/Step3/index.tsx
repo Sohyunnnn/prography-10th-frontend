@@ -1,14 +1,10 @@
-import { useState } from "react";
+import { useFormContext } from "react-hook-form";
 import FormHeader from "../FormHeader";
 import RequiredLabel from "../RequiredLabel";
 import LabeledRadioButton from "../LabeledRadioButton";
 
 const Step3 = () => {
-  const [selectedField, setSelectedField] = useState("");
-
-  const handleFieldChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedField(e.target.value);
-  };
+  const { register } = useFormContext();
 
   const fields = [
     { value: "frontend", label: "프론트엔드" },
@@ -28,15 +24,13 @@ const Step3 = () => {
       <div className="mt-5 flex flex-col gap-3">
         <RequiredLabel>지원 분야를 선택해주세요.</RequiredLabel>
         <div className="flex flex-col gap-3">
-          {fields.map((field) => (
+          {fields.map((item) => (
             <LabeledRadioButton
-              key={field.value}
-              id={`field-${field.value}`}
-              name="field"
-              value={field.value}
-              label={field.label}
-              checked={selectedField === field.value}
-              onChange={handleFieldChange}
+              key={item.value}
+              id={`field-${item.value}`}
+              value={item.value}
+              label={item.label}
+              {...register("field")}
             />
           ))}
         </div>
