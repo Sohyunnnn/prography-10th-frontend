@@ -11,7 +11,7 @@ const Recruiting = () => {
 
   return (
     <main className="flex items-center">
-      <div className="bg-gray-10 h-170 w-150 rounded-lg p-6">
+      <div className="bg-gray-10 h-170 w-150 rounded-lg px-10 py-6">
         <p className="title3 p-4 text-center">Prography 10기 지원서</p>
         <div className="flex items-center justify-center gap-2">
           {steps.map((currentStep) => (
